@@ -1,0 +1,563 @@
+2023-08-16T06:10:31.0290960Z Requested labels: ubuntu-20.04
+2023-08-16T06:10:31.0291391Z Job defined at: wikimedia/jquery.i18n/.github/workflows/ci.yaml@refs/pull/271/merge
+2023-08-16T06:10:31.0291607Z Waiting for a runner to pick up this job...
+2023-08-16T06:10:32.6455569Z Job is waiting for a hosted runner to come online.
+2023-08-16T06:10:34.9802938Z Job is about to start running on the hosted runner: GitHub Actions 2 (hosted)
+2023-08-16T06:10:37.4721149Z Current runner version: '2.307.1'
+2023-08-16T06:10:37.4753379Z ##[group]Operating System
+2023-08-16T06:10:37.4754074Z Ubuntu
+2023-08-16T06:10:37.4755175Z 20.04.6
+2023-08-16T06:10:37.4755588Z LTS
+2023-08-16T06:10:37.4755959Z ##[endgroup]
+2023-08-16T06:10:37.4756381Z ##[group]Runner Image
+2023-08-16T06:10:37.4756843Z Image: ubuntu-20.04
+2023-08-16T06:10:37.4757250Z Version: 20230806.1.0
+2023-08-16T06:10:37.4757837Z Included Software: https://github.com/actions/runner-images/blob/ubuntu20/20230806.1/images/linux/Ubuntu2004-Readme.md
+2023-08-16T06:10:37.4758683Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20230806.1
+2023-08-16T06:10:37.4759644Z ##[endgroup]
+2023-08-16T06:10:37.4760105Z ##[group]Runner Image Provisioner
+2023-08-16T06:10:37.4760471Z 2.0.264.1
+2023-08-16T06:10:37.4760831Z ##[endgroup]
+2023-08-16T06:10:37.4762042Z ##[group]GITHUB_TOKEN Permissions
+2023-08-16T06:10:37.4762902Z Actions: read
+2023-08-16T06:10:37.4763233Z Checks: read
+2023-08-16T06:10:37.4763926Z Contents: read
+2023-08-16T06:10:37.4764422Z Deployments: read
+2023-08-16T06:10:37.4764829Z Discussions: read
+2023-08-16T06:10:37.4765220Z Issues: read
+2023-08-16T06:10:37.4765587Z Metadata: read
+2023-08-16T06:10:37.4765977Z Packages: read
+2023-08-16T06:10:37.4766360Z Pages: read
+2023-08-16T06:10:37.4766695Z PullRequests: read
+2023-08-16T06:10:37.4767127Z RepositoryProjects: read
+2023-08-16T06:10:37.4767610Z SecurityEvents: read
+2023-08-16T06:10:37.4767960Z Statuses: read
+2023-08-16T06:10:37.4768344Z ##[endgroup]
+2023-08-16T06:10:37.4772715Z Secret source: None
+2023-08-16T06:10:37.4773277Z Prepare workflow directory
+2023-08-16T06:10:37.5704962Z Prepare all required actions
+2023-08-16T06:10:37.5949066Z Getting action download info
+2023-08-16T06:10:37.8139912Z Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+2023-08-16T06:10:38.4770781Z Download action repository 'actions/setup-node@v2' (SHA:7c12f8017d5436eb855f1ed4399f037a36fbd9e8)
+2023-08-16T06:10:39.2857094Z Complete job name: build (16)
+2023-08-16T06:10:39.3963959Z ##[group]Run actions/checkout@v2
+2023-08-16T06:10:39.3964340Z with:
+2023-08-16T06:10:39.3964640Z   repository: wikimedia/jquery.i18n
+2023-08-16T06:10:39.3965224Z   token: ***
+2023-08-16T06:10:39.3965479Z   ssh-strict: true
+2023-08-16T06:10:39.3965780Z   persist-credentials: true
+2023-08-16T06:10:39.3966073Z   clean: true
+2023-08-16T06:10:39.3966319Z   fetch-depth: 1
+2023-08-16T06:10:39.3966573Z   lfs: false
+2023-08-16T06:10:39.3966826Z   submodules: false
+2023-08-16T06:10:39.3967102Z   set-safe-directory: true
+2023-08-16T06:10:39.3967400Z ##[endgroup]
+2023-08-16T06:10:39.9919101Z Syncing repository: wikimedia/jquery.i18n
+2023-08-16T06:10:39.9921969Z ##[group]Getting Git version info
+2023-08-16T06:10:39.9922763Z Working directory is '/home/runner/work/jquery.i18n/jquery.i18n'
+2023-08-16T06:10:39.9923448Z [command]/usr/bin/git version
+2023-08-16T06:10:40.0073790Z git version 2.41.0
+2023-08-16T06:10:40.0111708Z ##[endgroup]
+2023-08-16T06:10:40.0138848Z Temporarily overriding HOME='/home/runner/work/_temp/62fa750d-70d3-4fa5-9547-6609174a4c37' before making global git config changes
+2023-08-16T06:10:40.0140929Z Adding repository directory to the temporary git global config as a safe directory
+2023-08-16T06:10:40.0149695Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jquery.i18n/jquery.i18n
+2023-08-16T06:10:40.0213535Z Deleting the contents of '/home/runner/work/jquery.i18n/jquery.i18n'
+2023-08-16T06:10:40.0220803Z ##[group]Initializing the repository
+2023-08-16T06:10:40.0226853Z [command]/usr/bin/git init /home/runner/work/jquery.i18n/jquery.i18n
+2023-08-16T06:10:40.0318603Z hint: Using 'master' as the name for the initial branch. This default branch name
+2023-08-16T06:10:40.0319511Z hint: is subject to change. To configure the initial branch name to use in all
+2023-08-16T06:10:40.0320790Z hint: of your new repositories, which will suppress this warning, call:
+2023-08-16T06:10:40.0321234Z hint: 
+2023-08-16T06:10:40.0321919Z hint: 	git config --global init.defaultBranch <name>
+2023-08-16T06:10:40.0322667Z hint: 
+2023-08-16T06:10:40.0323134Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2023-08-16T06:10:40.0323728Z hint: 'development'. The just-created branch can be renamed via this command:
+2023-08-16T06:10:40.0324088Z hint: 
+2023-08-16T06:10:40.0324394Z hint: 	git branch -m <name>
+2023-08-16T06:10:40.0338678Z Initialized empty Git repository in /home/runner/work/jquery.i18n/jquery.i18n/.git/
+2023-08-16T06:10:40.0349507Z [command]/usr/bin/git remote add origin https://github.com/wikimedia/jquery.i18n
+2023-08-16T06:10:40.0408107Z ##[endgroup]
+2023-08-16T06:10:40.0409078Z ##[group]Disabling automatic garbage collection
+2023-08-16T06:10:40.0413544Z [command]/usr/bin/git config --local gc.auto 0
+2023-08-16T06:10:40.0462300Z ##[endgroup]
+2023-08-16T06:10:40.0463238Z ##[group]Setting up auth
+2023-08-16T06:10:40.0474117Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-08-16T06:10:40.0524045Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-08-16T06:10:40.1045829Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-08-16T06:10:40.1089720Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-08-16T06:10:40.1374369Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2023-08-16T06:10:40.1427404Z ##[endgroup]
+2023-08-16T06:10:40.1428330Z ##[group]Fetching the repository
+2023-08-16T06:10:40.1437904Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +eb19b28440a10bf2c916f2e384ac14cb70a3c32f:refs/remotes/pull/271/merge
+2023-08-16T06:10:40.4948153Z remote: Enumerating objects: 68, done.        
+2023-08-16T06:10:40.4949199Z remote: Counting objects:   1% (1/68)        
+2023-08-16T06:10:40.4949777Z remote: Counting objects:   2% (2/68)        
+2023-08-16T06:10:40.4950218Z remote: Counting objects:   4% (3/68)        
+2023-08-16T06:10:40.4950665Z remote: Counting objects:   5% (4/68)        
+2023-08-16T06:10:40.4951068Z remote: Counting objects:   7% (5/68)        
+2023-08-16T06:10:40.4951483Z remote: Counting objects:   8% (6/68)        
+2023-08-16T06:10:40.4951898Z remote: Counting objects:  10% (7/68)        
+2023-08-16T06:10:40.4952325Z remote: Counting objects:  11% (8/68)        
+2023-08-16T06:10:40.4952739Z remote: Counting objects:  13% (9/68)        
+2023-08-16T06:10:40.4953156Z remote: Counting objects:  14% (10/68)        
+2023-08-16T06:10:40.4953580Z remote: Counting objects:  16% (11/68)        
+2023-08-16T06:10:40.4954384Z remote: Counting objects:  17% (12/68)        
+2023-08-16T06:10:40.4957379Z remote: Counting objects:  19% (13/68)        
+2023-08-16T06:10:40.4966280Z remote: Counting objects:  20% (14/68)        
+2023-08-16T06:10:40.4970641Z remote: Counting objects:  22% (15/68)        
+2023-08-16T06:10:40.4988044Z remote: Counting objects:  23% (16/68)        
+2023-08-16T06:10:40.4995640Z remote: Counting objects:  25% (17/68)        
+2023-08-16T06:10:40.5001908Z remote: Counting objects:  26% (18/68)        
+2023-08-16T06:10:40.5011597Z remote: Counting objects:  27% (19/68)        
+2023-08-16T06:10:40.5020677Z remote: Counting objects:  29% (20/68)        
+2023-08-16T06:10:40.5026022Z remote: Counting objects:  30% (21/68)        
+2023-08-16T06:10:40.5033177Z remote: Counting objects:  32% (22/68)        
+2023-08-16T06:10:40.5037320Z remote: Counting objects:  33% (23/68)        
+2023-08-16T06:10:40.5045095Z remote: Counting objects:  35% (24/68)        
+2023-08-16T06:10:40.5052360Z remote: Counting objects:  36% (25/68)        
+2023-08-16T06:10:40.5056783Z remote: Counting objects:  38% (26/68)        
+2023-08-16T06:10:40.5062243Z remote: Counting objects:  39% (27/68)        
+2023-08-16T06:10:40.5068962Z remote: Counting objects:  41% (28/68)        
+2023-08-16T06:10:40.5072826Z remote: Counting objects:  42% (29/68)        
+2023-08-16T06:10:40.5079749Z remote: Counting objects:  44% (30/68)        
+2023-08-16T06:10:40.5082243Z remote: Counting objects:  45% (31/68)        
+2023-08-16T06:10:40.5089725Z remote: Counting objects:  47% (32/68)        
+2023-08-16T06:10:40.5092986Z remote: Counting objects:  48% (33/68)        
+2023-08-16T06:10:40.5098574Z remote: Counting objects:  50% (34/68)        
+2023-08-16T06:10:40.5102115Z remote: Counting objects:  51% (35/68)        
+2023-08-16T06:10:40.5104742Z remote: Counting objects:  52% (36/68)        
+2023-08-16T06:10:40.5108494Z remote: Counting objects:  54% (37/68)        
+2023-08-16T06:10:40.5111043Z remote: Counting objects:  55% (38/68)        
+2023-08-16T06:10:40.5113332Z remote: Counting objects:  57% (39/68)        
+2023-08-16T06:10:40.5115681Z remote: Counting objects:  58% (40/68)        
+2023-08-16T06:10:40.5118564Z remote: Counting objects:  60% (41/68)        
+2023-08-16T06:10:40.5121094Z remote: Counting objects:  61% (42/68)        
+2023-08-16T06:10:40.5123374Z remote: Counting objects:  63% (43/68)        
+2023-08-16T06:10:40.5125551Z remote: Counting objects:  64% (44/68)        
+2023-08-16T06:10:40.5127828Z remote: Counting objects:  66% (45/68)        
+2023-08-16T06:10:40.5134791Z remote: Counting objects:  67% (46/68)        
+2023-08-16T06:10:40.5135160Z remote: Counting objects:  69% (47/68)        
+2023-08-16T06:10:40.5135498Z remote: Counting objects:  70% (48/68)        
+2023-08-16T06:10:40.5135814Z remote: Counting objects:  72% (49/68)        
+2023-08-16T06:10:40.5136142Z remote: Counting objects:  73% (50/68)        
+2023-08-16T06:10:40.5136473Z remote: Counting objects:  75% (51/68)        
+2023-08-16T06:10:40.5136786Z remote: Counting objects:  76% (52/68)        
+2023-08-16T06:10:40.5137113Z remote: Counting objects:  77% (53/68)        
+2023-08-16T06:10:40.5137784Z remote: Counting objects:  79% (54/68)        
+2023-08-16T06:10:40.5138961Z remote: Counting objects:  80% (55/68)        
+2023-08-16T06:10:40.5140105Z remote: Counting objects:  82% (56/68)        
+2023-08-16T06:10:40.5140446Z remote: Counting objects:  83% (57/68)        
+2023-08-16T06:10:40.5140776Z remote: Counting objects:  85% (58/68)        
+2023-08-16T06:10:40.5141088Z remote: Counting objects:  86% (59/68)        
+2023-08-16T06:10:40.5141414Z remote: Counting objects:  88% (60/68)        
+2023-08-16T06:10:40.5141737Z remote: Counting objects:  89% (61/68)        
+2023-08-16T06:10:40.5142044Z remote: Counting objects:  91% (62/68)        
+2023-08-16T06:10:40.5142361Z remote: Counting objects:  92% (63/68)        
+2023-08-16T06:10:40.5142684Z remote: Counting objects:  94% (64/68)        
+2023-08-16T06:10:40.5143170Z remote: Counting objects:  95% (65/68)        
+2023-08-16T06:10:40.5143484Z remote: Counting objects:  97% (66/68)        
+2023-08-16T06:10:40.5145200Z remote: Counting objects:  98% (67/68)        
+2023-08-16T06:10:40.5145594Z remote: Counting objects: 100% (68/68)        
+2023-08-16T06:10:40.5146070Z remote: Counting objects: 100% (68/68), done.        
+2023-08-16T06:10:40.5146427Z remote: Compressing objects:   1% (1/57)        
+2023-08-16T06:10:40.5146787Z remote: Compressing objects:   3% (2/57)        
+2023-08-16T06:10:40.5147139Z remote: Compressing objects:   5% (3/57)        
+2023-08-16T06:10:40.5147473Z remote: Compressing objects:   7% (4/57)        
+2023-08-16T06:10:40.5147819Z remote: Compressing objects:   8% (5/57)        
+2023-08-16T06:10:40.5148168Z remote: Compressing objects:  10% (6/57)        
+2023-08-16T06:10:40.5148498Z remote: Compressing objects:  12% (7/57)        
+2023-08-16T06:10:40.5148836Z remote: Compressing objects:  14% (8/57)        
+2023-08-16T06:10:40.5149177Z remote: Compressing objects:  15% (9/57)        
+2023-08-16T06:10:40.5149510Z remote: Compressing objects:  17% (10/57)        
+2023-08-16T06:10:40.5149873Z remote: Compressing objects:  19% (11/57)        
+2023-08-16T06:10:40.5150514Z remote: Compressing objects:  21% (12/57)        
+2023-08-16T06:10:40.5150867Z remote: Compressing objects:  22% (13/57)        
+2023-08-16T06:10:40.5151197Z remote: Compressing objects:  24% (14/57)        
+2023-08-16T06:10:40.5151542Z remote: Compressing objects:  26% (15/57)        
+2023-08-16T06:10:40.5151886Z remote: Compressing objects:  28% (16/57)        
+2023-08-16T06:10:40.5152210Z remote: Compressing objects:  29% (17/57)        
+2023-08-16T06:10:40.5152551Z remote: Compressing objects:  31% (18/57)        
+2023-08-16T06:10:40.5152892Z remote: Compressing objects:  33% (19/57)        
+2023-08-16T06:10:40.5153214Z remote: Compressing objects:  35% (20/57)        
+2023-08-16T06:10:40.5153553Z remote: Compressing objects:  36% (21/57)        
+2023-08-16T06:10:40.5153890Z remote: Compressing objects:  38% (22/57)        
+2023-08-16T06:10:40.5154420Z remote: Compressing objects:  40% (23/57)        
+2023-08-16T06:10:40.5154863Z remote: Compressing objects:  42% (24/57)        
+2023-08-16T06:10:40.5155249Z remote: Compressing objects:  43% (25/57)        
+2023-08-16T06:10:40.5155592Z remote: Compressing objects:  45% (26/57)        
+2023-08-16T06:10:40.5155917Z remote: Compressing objects:  47% (27/57)        
+2023-08-16T06:10:40.5156254Z remote: Compressing objects:  49% (28/57)        
+2023-08-16T06:10:40.5156591Z remote: Compressing objects:  50% (29/57)        
+2023-08-16T06:10:40.5156914Z remote: Compressing objects:  52% (30/57)        
+2023-08-16T06:10:40.5157250Z remote: Compressing objects:  54% (31/57)        
+2023-08-16T06:10:40.5157589Z remote: Compressing objects:  56% (32/57)        
+2023-08-16T06:10:40.5157917Z remote: Compressing objects:  57% (33/57)        
+2023-08-16T06:10:40.5158261Z remote: Compressing objects:  59% (34/57)        
+2023-08-16T06:10:40.5158603Z remote: Compressing objects:  61% (35/57)        
+2023-08-16T06:10:40.5158942Z remote: Compressing objects:  63% (36/57)        
+2023-08-16T06:10:40.5159412Z remote: Compressing objects:  64% (37/57)        
+2023-08-16T06:10:40.5159767Z remote: Compressing objects:  66% (38/57)        
+2023-08-16T06:10:40.5160113Z remote: Compressing objects:  68% (39/57)        
+2023-08-16T06:10:40.5160441Z remote: Compressing objects:  70% (40/57)        
+2023-08-16T06:10:40.5160780Z remote: Compressing objects:  71% (41/57)        
+2023-08-16T06:10:40.5161120Z remote: Compressing objects:  73% (42/57)        
+2023-08-16T06:10:40.5161449Z remote: Compressing objects:  75% (43/57)        
+2023-08-16T06:10:40.5161787Z remote: Compressing objects:  77% (44/57)        
+2023-08-16T06:10:40.5162166Z remote: Compressing objects:  78% (45/57)        
+2023-08-16T06:10:40.5162501Z remote: Compressing objects:  80% (46/57)        
+2023-08-16T06:10:40.5162824Z remote: Compressing objects:  82% (47/57)        
+2023-08-16T06:10:40.5163159Z remote: Compressing objects:  84% (48/57)        
+2023-08-16T06:10:40.5163500Z remote: Compressing objects:  85% (49/57)        
+2023-08-16T06:10:40.5163827Z remote: Compressing objects:  87% (50/57)        
+2023-08-16T06:10:40.5164168Z remote: Compressing objects:  89% (51/57)        
+2023-08-16T06:10:40.5164506Z remote: Compressing objects:  91% (52/57)        
+2023-08-16T06:10:40.5164832Z remote: Compressing objects:  92% (53/57)        
+2023-08-16T06:10:40.5165170Z remote: Compressing objects:  94% (54/57)        
+2023-08-16T06:10:40.5165507Z remote: Compressing objects:  96% (55/57)        
+2023-08-16T06:10:40.5165827Z remote: Compressing objects:  98% (56/57)        
+2023-08-16T06:10:40.5166168Z remote: Compressing objects: 100% (57/57)        
+2023-08-16T06:10:40.5166526Z remote: Compressing objects: 100% (57/57), done.        
+2023-08-16T06:10:40.5919278Z remote: Total 68 (delta 6), reused 33 (delta 3), pack-reused 0        
+2023-08-16T06:10:40.6034179Z From https://github.com/wikimedia/jquery.i18n
+2023-08-16T06:10:40.6035408Z  * [new ref]         eb19b28440a10bf2c916f2e384ac14cb70a3c32f -> pull/271/merge
+2023-08-16T06:10:40.6148189Z ##[endgroup]
+2023-08-16T06:10:40.6150471Z ##[group]Determining the checkout info
+2023-08-16T06:10:40.6152054Z ##[endgroup]
+2023-08-16T06:10:40.6153647Z ##[group]Checking out the ref
+2023-08-16T06:10:40.6154989Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/271/merge
+2023-08-16T06:10:40.6343886Z Note: switching to 'refs/remotes/pull/271/merge'.
+2023-08-16T06:10:40.6345863Z 
+2023-08-16T06:10:40.6346860Z You are in 'detached HEAD' state. You can look around, make experimental
+2023-08-16T06:10:40.6349822Z changes and commit them, and you can discard any commits you make in this
+2023-08-16T06:10:40.6350909Z state without impacting any branches by switching back to a branch.
+2023-08-16T06:10:40.6351380Z 
+2023-08-16T06:10:40.6352019Z If you want to create a new branch to retain commits you create, you may
+2023-08-16T06:10:40.6352877Z do so (now or later) by using -c with the switch command. Example:
+2023-08-16T06:10:40.6353555Z 
+2023-08-16T06:10:40.6353966Z   git switch -c <new-branch-name>
+2023-08-16T06:10:40.6354578Z 
+2023-08-16T06:10:40.6354935Z Or undo this operation with:
+2023-08-16T06:10:40.6356102Z 
+2023-08-16T06:10:40.6358813Z   git switch -
+2023-08-16T06:10:40.6359555Z 
+2023-08-16T06:10:40.6359987Z Turn off this advice by setting config variable advice.detachedHead to false
+2023-08-16T06:10:40.6360680Z 
+2023-08-16T06:10:40.6366676Z HEAD is now at eb19b28 Merge fc124e63701e0635ecfea66c6c96b5be71b9c9e3 into c94bc2a1de3fd4de85f17447884068de82e7a815
+2023-08-16T06:10:40.6401958Z ##[endgroup]
+2023-08-16T06:10:40.6457659Z [command]/usr/bin/git log -1 --format='%H'
+2023-08-16T06:10:40.6492814Z 'eb19b28440a10bf2c916f2e384ac14cb70a3c32f'
+2023-08-16T06:10:40.6979509Z ##[group]Run actions/setup-node@v2
+2023-08-16T06:10:40.6979850Z with:
+2023-08-16T06:10:40.6980118Z   node-version: 16
+2023-08-16T06:10:40.6980770Z   always-auth: false
+2023-08-16T06:10:40.6981167Z   check-latest: false
+2023-08-16T06:10:40.6981760Z   token: ***
+2023-08-16T06:10:40.6982016Z ##[endgroup]
+2023-08-16T06:10:40.9534562Z Found in cache @ /opt/hostedtoolcache/node/16.20.1/x64
+2023-08-16T06:10:40.9713293Z ##[group]Run git submodule update --init
+2023-08-16T06:10:40.9713862Z [36;1mgit submodule update --init[0m
+2023-08-16T06:10:40.9787489Z shell: /usr/bin/bash -e {0}
+2023-08-16T06:10:40.9788004Z ##[endgroup]
+2023-08-16T06:10:41.0270288Z Submodule 'libs/CLDRPluralRuleParser' (https://github.com/santhoshtr/CLDRPluralRuleParser.git) registered for path 'libs/CLDRPluralRuleParser'
+2023-08-16T06:10:41.0339468Z Cloning into '/home/runner/work/jquery.i18n/jquery.i18n/libs/CLDRPluralRuleParser'...
+2023-08-16T06:10:41.6099521Z Submodule path 'libs/CLDRPluralRuleParser': checked out '8baf9aedc428924fe6ee508b3d952cb5564efb3a'
+2023-08-16T06:10:41.6166643Z ##[group]Run npm ci
+2023-08-16T06:10:41.6167057Z [36;1mnpm ci[0m
+2023-08-16T06:10:41.6242630Z shell: /usr/bin/bash -e {0}
+2023-08-16T06:10:41.6242963Z ##[endgroup]
+2023-08-16T06:10:48.0807403Z npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+2023-08-16T06:10:48.8996262Z npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+2023-08-16T06:10:49.0640170Z npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+2023-08-16T06:10:49.1592065Z npm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+2023-08-16T06:10:49.5709127Z npm WARN deprecated puppeteer@1.20.0: Version no longer supported. Upgrade to @latest
+2023-08-16T06:10:56.5739998Z 
+2023-08-16T06:10:56.5745950Z added 388 packages, and audited 389 packages in 12s
+2023-08-16T06:10:56.5826546Z 
+2023-08-16T06:10:56.5827689Z 27 packages are looking for funding
+2023-08-16T06:10:56.5828676Z   run `npm fund` for details
+2023-08-16T06:10:56.5875605Z 
+2023-08-16T06:10:56.5876241Z 2 moderate severity vulnerabilities
+2023-08-16T06:10:56.5877003Z 
+2023-08-16T06:10:56.5877419Z To address all issues, run:
+2023-08-16T06:10:56.5878224Z   npm audit fix
+2023-08-16T06:10:56.5878552Z 
+2023-08-16T06:10:56.5879308Z Run `npm audit` for details.
+2023-08-16T06:10:56.6270635Z ##[group]Run npm run test
+2023-08-16T06:10:56.6270965Z [36;1mnpm run test[0m
+2023-08-16T06:10:56.6336025Z shell: /usr/bin/bash -e {0}
+2023-08-16T06:10:56.6336336Z ##[endgroup]
+2023-08-16T06:10:57.0312419Z 
+2023-08-16T06:10:57.0327557Z > @wikimedia/jquery.i18n@1.0.9 test
+2023-08-16T06:10:57.0328855Z > grunt test --verbose
+2023-08-16T06:10:57.0329248Z 
+2023-08-16T06:10:57.3694147Z Initializing
+2023-08-16T06:10:57.3727908Z Command-line options: --verbose, --gruntfile=/home/runner/work/jquery.i18n/jquery.i18n/Gruntfile.js
+2023-08-16T06:10:57.3728583Z 
+2023-08-16T06:10:57.3731177Z Reading "Gruntfile.js" Gruntfile...OK
+2023-08-16T06:10:57.3882461Z 
+2023-08-16T06:10:57.3882914Z Registering Gruntfile tasks.
+2023-08-16T06:10:57.3883162Z 
+2023-08-16T06:10:57.3883763Z Registering "grunt-eslint" local Npm module tasks.
+2023-08-16T06:10:57.3884583Z Reading /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-eslint/package.json...OK
+2023-08-16T06:10:57.3885527Z Parsing /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-eslint/package.json...OK
+2023-08-16T06:10:57.5293684Z Loading "eslint.js" tasks...OK
+2023-08-16T06:10:57.5298291Z + eslint
+2023-08-16T06:10:57.5298721Z 
+2023-08-16T06:10:57.5301876Z Registering "grunt-contrib-qunit" local Npm module tasks.
+2023-08-16T06:10:57.5302991Z Reading /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-qunit/package.json...OK
+2023-08-16T06:10:57.5304366Z Parsing /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-qunit/package.json...OK
+2023-08-16T06:10:57.5928558Z Loading "qunit.js" tasks...OK
+2023-08-16T06:10:57.5929612Z + qunit
+2023-08-16T06:10:57.5930285Z 
+2023-08-16T06:10:57.5931226Z Registering "grunt-contrib-connect" local Npm module tasks.
+2023-08-16T06:10:57.5937474Z Reading /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-connect/package.json...OK
+2023-08-16T06:10:57.5938857Z Parsing /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-connect/package.json...OK
+2023-08-16T06:10:57.6749457Z Loading "connect.js" tasks...OK
+2023-08-16T06:10:57.6749808Z + connect
+2023-08-16T06:10:57.6749965Z 
+2023-08-16T06:10:57.6750623Z Registering "grunt-contrib-watch" local Npm module tasks.
+2023-08-16T06:10:57.6751471Z Reading /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-watch/package.json...OK
+2023-08-16T06:10:57.6752389Z Parsing /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-watch/package.json...OK
+2023-08-16T06:10:57.7196674Z Loading "watch.js" tasks...OK
+2023-08-16T06:10:57.7197046Z + watch
+2023-08-16T06:10:57.7197341Z Initializing config...OK
+2023-08-16T06:10:57.7197744Z Loading "Gruntfile.js" tasks...OK
+2023-08-16T06:10:57.7198163Z + default, fix, lint, server, test, unit
+2023-08-16T06:10:57.7198371Z 
+2023-08-16T06:10:57.7198516Z Running tasks: test
+2023-08-16T06:10:57.7203045Z 
+2023-08-16T06:10:57.7203180Z Running "test" task
+2023-08-16T06:10:57.7209121Z 
+2023-08-16T06:10:57.7209276Z Running "lint" task
+2023-08-16T06:10:57.7209458Z 
+2023-08-16T06:10:57.7209677Z Running "eslint:main" (eslint) task
+2023-08-16T06:10:57.7243443Z Verifying property eslint.main exists in config...OK
+2023-08-16T06:10:57.7436428Z Files: Gruntfile.js, src/jquery.i18n.emitter.bidi.js, src/jquery.i18n.emitter.js, src/jquery.i18n.fallbacks.js, src/jquery.i18n.js, src/jquery.i18n.language.js, src/jquery.i18n.messagestore.js, src/jquery.i18n.parser.js, src/languages/bs.js, src/languages/dsb.js, src/languages/fi.js, src/languages/ga.js, src/languages/he.js, src/languages/hsb.js, src/languages/hu.js, src/languages/hy.js, src/languages/la.js, src/languages/ml.js, src/languages/os.js, src/languages/ru.js, src/languages/sl.js, src/languages/uk.js, test/jquery.i18n.test.js -> main
+2023-08-16T06:10:57.7450101Z Options: outputFile=false, quiet=false, maxWarnings=-1, failOnError
+2023-08-16T06:10:59.3617863Z 
+2023-08-16T06:10:59.3618909Z Running "unit" task
+2023-08-16T06:10:59.3619329Z 
+2023-08-16T06:10:59.3619753Z Running "server" task
+2023-08-16T06:10:59.3620707Z 
+2023-08-16T06:10:59.3621590Z Running "connect" task
+2023-08-16T06:10:59.3625559Z 
+2023-08-16T06:10:59.3626117Z Running "connect:server" (connect) task
+2023-08-16T06:10:59.3632564Z Verifying property connect.server exists in config...OK
+2023-08-16T06:10:59.3634605Z File: [no files]
+2023-08-16T06:10:59.3644410Z Options: protocol="http", port=9001, hostname="0.0.0.0", base=".", directory=null, keepalive=false, debug=false, livereload=false, open=false, useAvailablePort=false, onCreateServer=null, middleware=null
+2023-08-16T06:10:59.3656706Z Reading /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-connect/tasks/certs/server.key...OK
+2023-08-16T06:10:59.3658847Z Reading /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-connect/tasks/certs/server.crt...OK
+2023-08-16T06:10:59.3661295Z Reading /home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-connect/tasks/certs/ca.crt...OK
+2023-08-16T06:10:59.3740615Z Started connect web server on http://localhost:9001
+2023-08-16T06:10:59.3749920Z 
+2023-08-16T06:10:59.3750391Z Running "qunit" task
+2023-08-16T06:10:59.3752505Z 
+2023-08-16T06:10:59.3752960Z Running "qunit:all" (qunit) task
+2023-08-16T06:10:59.3764378Z Verifying property qunit.all exists in config...OK
+2023-08-16T06:10:59.3766516Z File: [no files]
+2023-08-16T06:10:59.3776024Z Options: timeout=5000, inject="/home/runner/work/jquery.i18n/jquery.i18n/node_modules/grunt-contrib-qunit/chrome/bridge.js", urls=["http://localhost:9001/test/index.html"], force=false, console, httpBase=false, summaryOnly=false
+2023-08-16T06:10:59.8114904Z 
+2023-08-16T06:10:59.8149671Z Testing http://localhost:9001/test/index.html 
+2023-08-16T06:10:59.9902905Z Loading messages from: i18n/test-ml.json
+2023-08-16T06:11:00.0222155Z jquery.i18n - $.fn.i18n Tests - Message parse tests...OK
+2023-08-16T06:11:00.0237393Z jquery.i18n - $.fn.i18n Tests - Message parse HTML...OK
+2023-08-16T06:11:00.0242703Z jquery.i18n - $.fn.i18n Tests - Message parse attributes...OK
+2023-08-16T06:11:00.0248570Z jquery.i18n - Message parse tests (en)...Loading messages from: i18n/test-en.json
+2023-08-16T06:11:00.1035852Z OK
+2023-08-16T06:11:00.1037481Z jquery.i18n - Message load tests...Loading messages from: i18n/test-en.json
+2023-08-16T06:11:00.1078786Z Trying fallback locale for test-en: en (message_3)
+2023-08-16T06:11:00.1161457Z OK
+2023-08-16T06:11:00.1168496Z jquery.i18n - Fallback test - Locale Fallback test...Trying fallback locale for sa: hi (hindi)
+2023-08-16T06:11:00.1173160Z Trying fallback locale for sa: hi (this-does-not-exist)
+2023-08-16T06:11:00.1174155Z Trying fallback locale for sa: en (this-does-not-exist)
+2023-08-16T06:11:00.1176191Z Trying fallback locale for tt-cyrl: ru (tt)
+2023-08-16T06:11:00.1208009Z Trying fallback locale for tt: tt-cyrl (tt)
+2023-08-16T06:11:00.1208780Z Trying fallback locale for tt: ru (tt)
+2023-08-16T06:11:00.1224286Z OK
+2023-08-16T06:11:00.1229600Z jquery.i18n - Fallback test - Message parse plural tests for Arabic...Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1249062Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1260385Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1270855Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1280277Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1297184Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1306845Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1312619Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1323215Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1332257Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1344358Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1354093Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1372575Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1386894Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1400830Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1406646Z Trying fallback locale for ar: en ({{plural:$1|zero|one|two|few|many|other}})
+2023-08-16T06:11:00.1434717Z OK
+2023-08-16T06:11:00.1441971Z jquery.i18n - Fallback test - Message parse plural tests for German...Trying fallback locale for de: en ($1 {{plural:$1|Meldung|Meldungen}})
+2023-08-16T06:11:00.1461401Z Trying fallback locale for de: en ($1 {{plural:$1|Meldung|Meldungen}})
+2023-08-16T06:11:00.1462290Z Trying fallback locale for de: en ($1 {{plural:$1|Meldung|Meldungen}})
+2023-08-16T06:11:00.1464459Z Trying fallback locale for de: en ($1 {{plural:$1|Meldung|Meldungen}})
+2023-08-16T06:11:00.1483723Z OK
+2023-08-16T06:11:00.1494987Z jquery.i18n - Fallback test - Message parse plural tests for Polish...Trying fallback locale for pl: en ($1 {{plural:$1|błąd|błędy|błędów}})
+2023-08-16T06:11:00.1496252Z Trying fallback locale for pl: en ($1 {{plural:$1|błąd|błędy|błędów}})
+2023-08-16T06:11:00.1498268Z Trying fallback locale for pl: en ($1 {{plural:$1|błąd|błędy|błędów}})
+2023-08-16T06:11:00.1519401Z Trying fallback locale for pl: en ($1 {{plural:$1|błąd|błędy|błędów}})
+2023-08-16T06:11:00.1520469Z Trying fallback locale for pl: en ($1 {{plural:$1|błąd|błędy|błędów}})
+2023-08-16T06:11:00.1619047Z OK
+2023-08-16T06:11:00.1620311Z jquery.i18n - Fallback test - Test explicit plural forms...OK
+2023-08-16T06:11:00.1628458Z jquery.i18n - Fallback test - Digit transform table tests (Persian)...OK
+2023-08-16T06:11:00.1633680Z jquery.i18n - Fallback test - Digit transform table tests (Arabic)...OK
+2023-08-16T06:11:00.1636506Z jquery.i18n - Fallback test - Support fallback loading from folder tests...Loading messages from: i18n/fallback/uk.json
+2023-08-16T06:11:00.1711913Z Loading messages from: i18n/fallback/en.json
+2023-08-16T06:11:00.1857409Z Failed to load resource: the server responded with a status of 404 (Not Found)
+2023-08-16T06:11:00.1858345Z Error in loading messages from i18n/fallback/uk.json Exception: Not Found
+2023-08-16T06:11:00.1908992Z Trying fallback locale for uk: en (message_1)
+2023-08-16T06:11:00.1969650Z OK
+2023-08-16T06:11:00.1973427Z jquery.i18n - Fallback test - Support combined file loading from URL...Loading messages from: i18n/test-combined.json
+2023-08-16T06:11:00.2076714Z Trying fallback locale for de: en (bar)
+2023-08-16T06:11:00.2164977Z OK
+2023-08-16T06:11:00.2173059Z jquery.i18n - Fallback test - Grammar test for language bs...Trying fallback locale for bs: en ({{GRAMMAR:instrumental|word}})
+2023-08-16T06:11:00.2176900Z Trying fallback locale for bs: en ({{GRAMMAR:lokativ|word}})
+2023-08-16T06:11:00.2218405Z OK
+2023-08-16T06:11:00.2228961Z jquery.i18n - Fallback test - Grammar test for language dsb...Trying fallback locale for dsb: hsb ({{GRAMMAR:instrumental|word}})
+2023-08-16T06:11:00.2232759Z Trying fallback locale for dsb: de ({{GRAMMAR:instrumental|word}})
+2023-08-16T06:11:00.2237716Z Trying fallback locale for dsb: en ({{GRAMMAR:instrumental|word}})
+2023-08-16T06:11:00.2242500Z Trying fallback locale for dsb: hsb ({{GRAMMAR:lokatiw|word}})
+2023-08-16T06:11:00.2243807Z Trying fallback locale for dsb: de ({{GRAMMAR:lokatiw|word}})
+2023-08-16T06:11:00.2245924Z Trying fallback locale for dsb: en ({{GRAMMAR:lokatiw|word}})
+2023-08-16T06:11:00.2251668Z OK
+2023-08-16T06:11:00.2257573Z jquery.i18n - Fallback test - Grammar test for language fi...Trying fallback locale for fi: en ({{GRAMMAR:genitive|talo}})
+2023-08-16T06:11:00.2280241Z Trying fallback locale for fi: en ({{GRAMMAR:genitive|linux}})
+2023-08-16T06:11:00.2284103Z Trying fallback locale for fi: en ({{GRAMMAR:elative|talo}})
+2023-08-16T06:11:00.2290460Z Trying fallback locale for fi: en ({{GRAMMAR:partitive|pastöroitu}})
+2023-08-16T06:11:00.2294406Z Trying fallback locale for fi: en ({{GRAMMAR:partitive|talo}})
+2023-08-16T06:11:00.2298077Z Trying fallback locale for fi: en ({{GRAMMAR:illative|talo}})
+2023-08-16T06:11:00.2302833Z Trying fallback locale for fi: en ({{GRAMMAR:inessive|linux}})
+2023-08-16T06:11:00.2320257Z OK
+2023-08-16T06:11:00.2325831Z jquery.i18n - Fallback test - Grammar test for language ga...Trying fallback locale for ga: en ({{GRAMMAR:ainmlae|an Domhnach}})
+2023-08-16T06:11:00.2329412Z Trying fallback locale for ga: en ({{GRAMMAR:ainmlae|an Luan}})
+2023-08-16T06:11:00.2333242Z Trying fallback locale for ga: en ({{GRAMMAR:ainmlae|an Satharn}})
+2023-08-16T06:11:00.2358930Z OK
+2023-08-16T06:11:00.2364400Z jquery.i18n - Fallback test - Grammar test for language he...Trying fallback locale for he: en ({{GRAMMAR:prefixed|ויקיפדיה}})
+2023-08-16T06:11:00.2375408Z Trying fallback locale for he: en ({{GRAMMAR:prefixed|וולפגנג}})
+2023-08-16T06:11:00.2384896Z Trying fallback locale for he: en ({{GRAMMAR:prefixed|הקובץ}})
+2023-08-16T06:11:00.2388166Z Trying fallback locale for he: en ({{GRAMMAR:תחילית|Wikipedia}})
+2023-08-16T06:11:00.2395708Z Trying fallback locale for he: en ({{GRAMMAR:תחילית|1995}})
+2023-08-16T06:11:00.2437058Z OK
+2023-08-16T06:11:00.2445860Z jquery.i18n - Fallback test - Grammar test for language hsb...Trying fallback locale for hsb: dsb ({{GRAMMAR:instrumental|word}})
+2023-08-16T06:11:00.2449597Z Trying fallback locale for hsb: de ({{GRAMMAR:instrumental|word}})
+2023-08-16T06:11:00.2453977Z Trying fallback locale for hsb: en ({{GRAMMAR:instrumental|word}})
+2023-08-16T06:11:00.2462297Z Trying fallback locale for hsb: dsb ({{GRAMMAR:lokatiw|word}})
+2023-08-16T06:11:00.2465771Z Trying fallback locale for hsb: de ({{GRAMMAR:lokatiw|word}})
+2023-08-16T06:11:00.2468980Z Trying fallback locale for hsb: en ({{GRAMMAR:lokatiw|word}})
+2023-08-16T06:11:00.2473233Z OK
+2023-08-16T06:11:00.2482181Z jquery.i18n - Fallback test - Grammar test for language hu...Trying fallback locale for hu: en ({{GRAMMAR:rol|Wikipédiá}})
+2023-08-16T06:11:00.2493156Z Trying fallback locale for hu: en ({{GRAMMAR:ba|Wikipédiá}})
+2023-08-16T06:11:00.2506825Z Trying fallback locale for hu: en ({{GRAMMAR:k|Wikipédiá}})
+2023-08-16T06:11:00.2514030Z OK
+2023-08-16T06:11:00.2519267Z jquery.i18n - Fallback test - Grammar test for language hy...Trying fallback locale for hy: en ({{GRAMMAR:genitive|Մաունա}})
+2023-08-16T06:11:00.2523235Z Trying fallback locale for hy: en ({{GRAMMAR:genitive|հետո}})
+2023-08-16T06:11:00.2532337Z Trying fallback locale for hy: en ({{GRAMMAR:genitive|գիրք}})
+2023-08-16T06:11:00.2543720Z Trying fallback locale for hy: en ({{GRAMMAR:genitive|ժամանակի}})
+2023-08-16T06:11:00.2624994Z OK
+2023-08-16T06:11:00.2626461Z jquery.i18n - Fallback test - Grammar test for language la...Trying fallback locale for la: en ({{GRAMMAR:genitive|Translatio}})
+2023-08-16T06:11:00.2627957Z Trying fallback locale for la: en ({{GRAMMAR:accusative|Translatio}})
+2023-08-16T06:11:00.2628785Z Trying fallback locale for la: en ({{GRAMMAR:ablative|Translatio}})
+2023-08-16T06:11:00.2629752Z OK
+2023-08-16T06:11:00.2630828Z jquery.i18n - Fallback test - Grammar test for language os...Trying fallback locale for os: ru ({{GRAMMAR:genitive|бæстæ}})
+2023-08-16T06:11:00.2632250Z Trying fallback locale for os: en ({{GRAMMAR:genitive|бæстæ}})
+2023-08-16T06:11:00.2633097Z Trying fallback locale for os: ru ({{GRAMMAR:allative|бæстæ}})
+2023-08-16T06:11:00.2634404Z Trying fallback locale for os: en ({{GRAMMAR:allative|бæстæ}})
+2023-08-16T06:11:00.2635680Z Trying fallback locale for os: ru ({{GRAMMAR:dative|Тигр}})
+2023-08-16T06:11:00.2637732Z Trying fallback locale for os: en ({{GRAMMAR:dative|Тигр}})
+2023-08-16T06:11:00.2644751Z Trying fallback locale for os: ru ({{GRAMMAR:dative|цъити}})
+2023-08-16T06:11:00.2649718Z Trying fallback locale for os: en ({{GRAMMAR:dative|цъити}})
+2023-08-16T06:11:00.2655837Z Trying fallback locale for os: ru ({{GRAMMAR:genitive|лæппу}})
+2023-08-16T06:11:00.2659575Z Trying fallback locale for os: en ({{GRAMMAR:genitive|лæппу}})
+2023-08-16T06:11:00.2664039Z Trying fallback locale for os: ru ({{GRAMMAR:equative|2011}})
+2023-08-16T06:11:00.2670841Z Trying fallback locale for os: en ({{GRAMMAR:equative|2011}})
+2023-08-16T06:11:00.2685534Z OK
+2023-08-16T06:11:00.2686892Z jquery.i18n - Fallback test - Grammar test for language ru...Trying fallback locale for ru: en ({{GRAMMAR:genitive|транслэйтвики}})
+2023-08-16T06:11:00.2688542Z Trying fallback locale for ru: en ({{GRAMMAR:genitive|тесть}})
+2023-08-16T06:11:00.2689465Z Trying fallback locale for ru: en ({{GRAMMAR:genitive|привилегия}})
+2023-08-16T06:11:00.2690861Z Trying fallback locale for ru: en ({{GRAMMAR:genitive|установка}})
+2023-08-16T06:11:00.2694185Z Trying fallback locale for ru: en ({{GRAMMAR:genitive|похоти}})
+2023-08-16T06:11:00.2696074Z Trying fallback locale for ru: en ({{GRAMMAR:genitive|доводы}})
+2023-08-16T06:11:00.2698644Z Trying fallback locale for ru: en ({{GRAMMAR:genitive|песчаник}})
+2023-08-16T06:11:00.2699891Z OK
+2023-08-16T06:11:00.2714461Z jquery.i18n - Fallback test - Grammar test for language sl...Trying fallback locale for sl: en ({{GRAMMAR:orodnik|word}})
+2023-08-16T06:11:00.2727261Z Trying fallback locale for sl: en ({{GRAMMAR:mestnik|word}})
+2023-08-16T06:11:00.2737671Z OK
+2023-08-16T06:11:00.2748142Z jquery.i18n - Fallback test - Grammar test for language uk...Trying fallback locale for uk: en ({{GRAMMAR:genitive|транслейтвікі}})
+2023-08-16T06:11:00.2753246Z Trying fallback locale for uk: en ({{GRAMMAR:genitive|тесть}})
+2023-08-16T06:11:00.2758058Z Trying fallback locale for uk: en ({{GRAMMAR:genitive|Вікіпедія}})
+2023-08-16T06:11:00.2762091Z Trying fallback locale for uk: en ({{GRAMMAR:genitive|установка}})
+2023-08-16T06:11:00.2765906Z Trying fallback locale for uk: en ({{GRAMMAR:genitive|похоти}})
+2023-08-16T06:11:00.2769677Z Trying fallback locale for uk: en ({{GRAMMAR:genitive|доводы}})
+2023-08-16T06:11:00.2875759Z Trying fallback locale for uk: en ({{GRAMMAR:genitive|песчаник}})
+2023-08-16T06:11:00.2880175Z Trying fallback locale for uk: en ({{GRAMMAR:accusative|Вікіпедія}})
+2023-08-16T06:11:00.2883577Z OK
+2023-08-16T06:11:00.2888671Z jquery.i18n - Fallback test - Grammar test for language ml...Trying fallback locale for ml: en ({{GRAMMAR:ഉദ്ദേശിക|കാവ്യ}})
+2023-08-16T06:11:00.2892585Z Trying fallback locale for ml: en ({{GRAMMAR:dative|പുലി}})
+2023-08-16T06:11:00.2896401Z Trying fallback locale for ml: en ({{GRAMMAR:dative|ഉപ്പ്}})
+2023-08-16T06:11:00.2900226Z Trying fallback locale for ml: en ({{GRAMMAR:dative|മയില്‍}})
+2023-08-16T06:11:00.2903989Z Trying fallback locale for ml: en ({{GRAMMAR:dative|അവര്‍}})
+2023-08-16T06:11:00.2907396Z Trying fallback locale for ml: en ({{GRAMMAR:dative|അവന്‍}})
+2023-08-16T06:11:00.2911180Z Trying fallback locale for ml: en ({{GRAMMAR:dative|മാളു}})
+2023-08-16T06:11:00.2917026Z Trying fallback locale for ml: en ({{GRAMMAR:genitive|മാളു}})
+2023-08-16T06:11:00.2917959Z Trying fallback locale for ml: en ({{GRAMMAR:genitive|മയില്‍}})
+2023-08-16T06:11:00.2918842Z Trying fallback locale for ml: en ({{GRAMMAR:genitive|അവര്‍}})
+2023-08-16T06:11:00.2921464Z Trying fallback locale for ml: en ({{GRAMMAR:genitive|അവന്‍}})
+2023-08-16T06:11:00.2924499Z Trying fallback locale for ml: en ({{GRAMMAR:genitive|ഉപ്പ്}})
+2023-08-16T06:11:00.2927481Z Trying fallback locale for ml: en ({{GRAMMAR:genitive|പുലി}})
+2023-08-16T06:11:00.2930476Z Trying fallback locale for ml: en ({{GRAMMAR:genitive|ഇന്ത്യ}})
+2023-08-16T06:11:00.2933581Z Trying fallback locale for ml: en ({{GRAMMAR:genitive|കേരളം}})
+2023-08-16T06:11:00.2937188Z Trying fallback locale for ml: en ({{GRAMMAR:സംബന്ധിക|യൂറോപ്പ്}})
+2023-08-16T06:11:00.2943507Z Trying fallback locale for ml: en ({{GRAMMAR:സംബന്ധിക|വയറു്}})
+2023-08-16T06:11:00.2944658Z Trying fallback locale for ml: en ({{GRAMMAR:സംബന്ധിക|കയറ്}})
+2023-08-16T06:11:00.2945069Z OK
+2023-08-16T06:11:00.2948244Z jquery.i18n - Fallback test - Bidi message arguments...OK
+2023-08-16T06:11:00.2953056Z jquery.i18n - Fallback test - Message parse tests (ml, fr)...Trying fallback locale for ml: en (This message key does not exist)
+2023-08-16T06:11:00.2956898Z Trying fallback locale for ml: en (Hello $1)
+2023-08-16T06:11:00.2963527Z Trying fallback locale for fr: en (Restaurer $1 modification{{PLURAL:$1||s}})
+2023-08-16T06:11:00.2972571Z Trying fallback locale for fr: en (Restaurer $1 modification{{PLURAL:$1||s}})
+2023-08-16T06:11:00.2980041Z OK
+2023-08-16T06:11:00.3166507Z 
+2023-08-16T06:11:00.3172362Z >> 30 tests completed with 0 failed, 0 skipped, and 0 todo. 
+2023-08-16T06:11:00.3173175Z >> 181 assertions (in 276ms), passed: 181, failed: 0
+2023-08-16T06:11:00.3453415Z 
+2023-08-16T06:11:00.3454168Z Done.
+2023-08-16T06:11:00.3808943Z Post job cleanup.
+2023-08-16T06:11:00.5563213Z Post job cleanup.
+2023-08-16T06:11:00.7283342Z [command]/usr/bin/git version
+2023-08-16T06:11:00.7345756Z git version 2.41.0
+2023-08-16T06:11:00.7404371Z Temporarily overriding HOME='/home/runner/work/_temp/067711fc-419c-4727-8494-f679eb9627ac' before making global git config changes
+2023-08-16T06:11:00.7406360Z Adding repository directory to the temporary git global config as a safe directory
+2023-08-16T06:11:00.7412530Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jquery.i18n/jquery.i18n
+2023-08-16T06:11:00.7468674Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-08-16T06:11:00.7557844Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-08-16T06:11:00.7869975Z Entering 'libs/CLDRPluralRuleParser'
+2023-08-16T06:11:00.7947194Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-08-16T06:11:00.7990589Z http.https://github.com/.extraheader
+2023-08-16T06:11:00.8006361Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2023-08-16T06:11:00.8063789Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-08-16T06:11:00.8343755Z Entering 'libs/CLDRPluralRuleParser'
+2023-08-16T06:11:00.8783766Z Cleaning up orphan processes  {
+  "description": "Trigger SomeProject CI",
+  "provider": {
+    "name": "Bar"
+  },
+  "events": [{
+    "name": "contract_content_changed"
+  }],
+  "request": {
+    "method": "POST",
+    "url": "http://master.ci.my.domain:8085/rest/api/latest/queue/SOME-PROJECT?os_authType=basic",
+    "username": "username",
+    "password": "password",
+    "headers": {
+      "Accept": "application/json"
+    }
+  }
+}
+                                                  https://colab.research.google.com/drive/13Fjo6K2TU7apG9l6ruxkl2NkeA3s7OkW?usp=sharing#scrollTo=VUHwAIxXJFIk  
+                                                  https://colab.research.google.com/drive/13Fjo6K2TU7apG9l6ruxkl2NkeA3s7OkW?usp=sharing#scrollTo=VUHwAIxXJFIk
+                                                         https://pmppoland.pactflow.io/overview/provider/Example%20Bi-Directional%20Provider/consumer/Example%20Bi-Directional%20Consumer
