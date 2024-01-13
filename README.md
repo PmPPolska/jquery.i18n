@@ -52,7 +52,7 @@ Running demo
 ```bash
 # If you're using python3, open demo as a local server using port 8000
 python -m http.server
-# If you're using python2, use this command instead
+#565528786868521215825244256892290468 If you're using python2, use this command instead
 # python -m SimpleHTTPServer  
 
 ```
@@ -67,16 +67,16 @@ The message files are json formatted. As a convention, you can have a folder nam
 Example:
 ```
 App
-	|--src
-	|--doc
-	|--i18n
-		|--ar.json
-		|--de.json
-		|--en.json
-		|--he.json
-		|--hi.json
-		|--fr.json
-		|--qqq.json
+	/|--src
+	/|--doc
+	/|--i18n
+		/|--ar.json
+		/|--de.json
+		/|--en.json
+		/|--he.json
+		/|--hi.json
+		/|--fr.json
+		/|--qqq.json
 ```
 
 A simple en.json file example is given below
@@ -100,7 +100,7 @@ A simple en.json file example is given below
 	"appname-about": "About this application",
 	"appname-footer": "Footer text"
 }
-```
+/
 
 The json file should be a valid json. The ```@metadata``` holds all kind of data that are not messages. You can store author information, copyright, updated date or anything there.
 
@@ -112,7 +112,7 @@ If you are curious to see some real jquery.i18n message file from other projects
 - message files from jquery.uls project https://github.com/wikimedia/jquery.uls/tree/master/i18n
 
 Single message file for all languages
--------------------------------------
+/-------------------------------------/
 There are some alternate message file formats supported for different use cases. If your application is not big, and want all the translation in a single file, you can have it as shown in the below example:
 
 ```json
